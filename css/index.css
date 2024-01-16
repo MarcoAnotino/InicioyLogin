@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto&family=Roboto+Mono:ital,wght@1,300&display=swap');
+@font-face {
+    font-family: letraminecraft;
+    src: url(../fonts/Minecraftia-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: letraminecraft;
+}
+
+body{
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+header .menu a{
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.site-header{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../images/backgrounds/background.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+main{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),url(../images/backgrounds/Base.png);
+    background-size: cover;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: -5;
+}
+
+.Header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 100px;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 120px;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+    color: #fefeff;
+}
+
+.item{
+    margin: 0 15px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fefeff;
+}
+
+#menu{
+    display: none;
+}
+
+label{
+    cursor: pointer;
+    display: none;
+}
+
+.btn{
+    padding: 10px 24px;
+    border-radius: 30px;
+    background-color: #2ebf1b;
+    color: #fefeff;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+#image-nomb{
+    width: 100%;
+}
+
+#content{
+    position: relative;
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.inicio{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)),url(../images/backgrounds/BackStone.jpg);
+    background-size: cover;
+    margin-top: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.74);
+    color: #ddd;
+    padding: 10px;
+    /* border: 2.5px #000101 solid; */
+}
+
+.inicio h1{
+    letter-spacing: 3px;
+    text-align: center;
+    /* font-size: 2.2em;
+    font-weight: 700; */
+    padding-bottom: 20px;
+}
+
+.inicio p{
+    letter-spacing: 2px;
+    /* font-size: 1.1em; */
+    text-align: center;
+    /* font-weight: 400; */
+}
+
+#ini-info{
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.info-in{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)),url(../images/backgrounds/BackStone.jpg);
+    background-size: cover;
+    width: 330px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.452);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    line-height: 35px;
+    color: #ddd;
+}
+.img-in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-in img{
+    width: 250px;
+}
+
+@media(max-width: 960px) {
+    #ini-info{
+        display:grid;
+    }
+
+    .inicio{
+        margin: 10px;
+        font-size: .9em;
+    }
+    .ini-info{
+        font-size: .9em;
+    }
+
+    .logo{
+        width: 100px;
+    }
+
+    header .menu{
+        display: none;
+    }
+    .menu{
+        padding: 0 0 30px;
+        margin: 0;
+    }
+    
+    label{
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        transition: 0.3s;
+    }
+
+    label:hover{
+        color: #b4b4b4;
+    }
+
+    label .close-btn{
+        display: none;
+    }
+
+    #menu:checked ~ .menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100px; 
+        left: 0;
+        width: 100%;
+        background-color: #5e5e5e96;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+
+    .item {
+        padding: 1rem;
+        margin-bottom: 20px;
+        color: #ffffff;
+        transition: background-color 0.3s;
+        width: 100%;
+    }
+
+    .item:hover {
+        background-color: #ddd;
+    }
+
+    #menu:checked ~ label .menu-btn{
+        display: none;
+    }
+
+    #menu:checked ~ label .close-btn{
+        z-index: 3;
+        display: block;
+    }
+
+}

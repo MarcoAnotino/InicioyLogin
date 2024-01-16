@@ -1,0 +1,261 @@
+@font-face {
+    font-family: letraminecraft;
+    src: url(../fonts/Minecraftia-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: letraminecraft;
+}
+body{
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 100px;
+}
+header .menu a{
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.site-header{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../images/backgrounds/background.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 70vh;
+}
+
+main{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),url(../images/backgrounds/Base.png);
+    background-size: cover;
+    position: relative;
+    z-index: -5;
+}
+
+.Header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 100px;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 120px;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+    color: #fefeff;
+}
+
+.item{
+    margin: 0 15px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fefeff;
+}
+
+#menu{
+    display: none;
+}
+
+label{
+    cursor: pointer;
+    display: none;
+}
+
+.btn{
+    padding: 10px 24px;
+    border-radius: 30px;
+    background-color: #2ebf1b;
+    color: #fefeff;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+}
+
+#image-nomb{
+    width: 70%;
+}
+
+#content{
+    position: relative;
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+}
+
+#contentMp{
+    padding-top: 20px;
+    text-align: center;
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.mapCurricular{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 0 20px;
+    background-color: #499739;
+    color: rgb(255, 255, 255);
+    height: 150px;
+}
+
+.mapCurricular p{
+    color:rgb(201, 201, 201);
+}
+.mpCurr{
+    color: #494949;
+}
+
+.mpCurricular img{
+    width: 100%;
+}
+
+.inicio{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)),url(../images/backgrounds/BackStone.jpg);
+    background-size: cover;
+    margin-top: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.74);
+    color: #f9f9f9;
+    padding: 20px;
+    /* border: 2.5px #000101 solid; */
+}
+
+.inicio h1{
+    letter-spacing: 3px;
+    text-align: center;
+    /* font-size: 2.2em;
+    font-weight: 700; */
+    padding-bottom: 20px;
+}
+
+.inicio p{
+    letter-spacing: 2px;
+    /* font-size: 1.1em; */
+    text-align: center;
+    /* font-weight: 400; */
+}
+
+.inicioMP{
+    background-color: #fefeff;
+    margin-top: 40px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+    color: #272727;
+    padding: 20px;
+}
+
+.inicioMP h1{
+    letter-spacing: 3px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+
+
+.steve{
+    position: relative;
+    text-align: center;
+    padding: 20px 0 20px;
+}
+
+.steve img{
+    width: 40%;
+}
+
+section{
+    padding-bottom: 20px;
+}
+
+@media(max-width: 960px) {
+    
+    .inicio{
+        margin: 10px;
+        font-size: .9em;
+    }
+    .ini-info{
+        font-size: .9em;
+    }
+
+    .logo{
+        width: 100px;
+    }
+
+    header .menu{
+        display: none;
+    }
+    .menu{
+        padding: 0 0 30px;
+        margin: 0;
+    }
+    
+    label{
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        transition: 0.3s;
+    }
+
+    label:hover{
+        color: #b4b4b4;
+    }
+
+    label .close-btn{
+        display: none;
+    }
+
+    #menu:checked ~ .menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100px; 
+        left: 0;
+        width: 100%;
+        background-color: #5e5e5e96;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+
+    .item {
+        padding: 1rem;
+        margin-bottom: 20px;
+        color: #ffffff;
+        transition: background-color 0.3s;
+        width: 100%;
+    }
+
+    .item:hover {
+        background-color: #ddd;
+    }
+
+    #menu:checked ~ label .menu-btn{
+        display: none;
+    }
+
+    #menu:checked ~ label .close-btn{
+        z-index: 3;
+        display: block;
+    }
+
+}

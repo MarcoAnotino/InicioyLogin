@@ -1,0 +1,28 @@
+.Calif-User{
+    /* border: 1px black solid; */
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.452);
+}
+
+.Calif-User table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .Calif-User th, .Calif-User td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+   
+  .Calif-User tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .Calif-User tbody tr:hover {
+    background-color: #e5e5e5;
+  }
+  
